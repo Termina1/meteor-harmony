@@ -22,7 +22,7 @@ Package.onUse(function (api) {
   // The location of this runtime file is not supposed to change:
   // http://git.io/B2s0Tg
   var dir = ".npm/plugin/compileHarmony/node_modules/traceur/bin/";
-  api.addFiles(path.join(dir, "traceur-runtime.js"));
+  api.addFiles(path.join(dir, "traceur-runtime.js"), 'client');
 
   // Export `module.exports` and `exports` down the package pipeline
   api.imply('mrt:exports@1.0.0');
